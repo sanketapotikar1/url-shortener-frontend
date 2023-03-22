@@ -18,7 +18,7 @@ function Dashboard() {
   const DashboardValid = async () => {
     let token = localStorage.getItem("usersdatatoken");
 
-    const res = await fetch("/validuser", {
+    const res = await fetch("https://url-shortner-backend-vrcq.onrender.com/validuser", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -43,7 +43,7 @@ function Dashboard() {
   };
 
   let shrink = async () => {
-    const res = await fetch("/shortUrls", {
+    const res = await fetch("https://url-shortner-backend-vrcq.onrender.com/shortUrls", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -58,7 +58,7 @@ function Dashboard() {
 
   let geturls = async () => {
     try {
-      const res = await fetch(`/geturls`, {
+      const res = await fetch(`https://url-shortner-backend-vrcq.onrender.com/geturls`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

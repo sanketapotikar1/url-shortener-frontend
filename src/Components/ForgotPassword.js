@@ -15,7 +15,7 @@ function ForgotPassword() {
   const [message, setMessage] = useState("");
 
   const userValid = async () => {
-    const res = await fetch(`/forgotpassword/${id}/${token}`, {
+    const res = await fetch(`https://url-shortner-backend-vrcq.onrender.com/forgotpassword/${id}/${token}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -43,7 +43,7 @@ function ForgotPassword() {
     } else if (password.length < 6) {
       alert("password must be 6 char!");
     } else {
-      const res = await fetch(`/${id}/${token}`, {
+      const res = await fetch(`https://url-shortner-backend-vrcq.onrender.com/${id}/${token}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

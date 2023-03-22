@@ -41,7 +41,7 @@ function Login() {
     } else {
       // console.log("user login succesfully done");
 
-      const data = await fetch("/login", {
+      const data = await fetch("https://url-shortner-backend-vrcq.onrender.com/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

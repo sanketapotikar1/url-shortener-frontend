@@ -41,7 +41,7 @@ function Registration() {
 
       // console.log("user registration succesfully done");
 
-      const data = await fetch("/registration", {
+      const data = await fetch("https://url-shortner-backend-vrcq.onrender.com/registration", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -11,7 +11,7 @@ function ShortUrl() {
 
   let redirect = async () => {
     try {
-      const res = await fetch(`${para}`, {
+      const res = await fetch(`https://url-shortner-backend-vrcq.onrender.com/${para}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

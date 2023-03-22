@@ -23,7 +23,7 @@ function Header() {
   const logoutuser = async () => {
     let token = localStorage.getItem("usersdatatoken");
 
-    const res = await fetch("/logout", {
+    const res = await fetch("https://url-shortner-backend-vrcq.onrender.com/logout", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
